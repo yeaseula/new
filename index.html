@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        * {box-sizing: border-box; text-decoration: none;}
+        ul,li,ol {list-style:none; margin:0; padding:0; }
+
+    /*헤더*/    
+        header {width: 1260px; height: 103px; margin:0 auto;}
+        #logo {width:210px; height:71px; background-color: blueviolet; float: left; margin: 18px 0 0 30px; }
+
+        #login {width:360px; height:71px; float: right; margin: 18px 10px 0 0px;}
+        #login > .icon {width: 30px; height: 30px; float:right; display:inline-block; margin: 15px 0 0 40px; }
+        #login > .icon > a > img {width: 100%; height: 100%;}
+
+        .nav1 {width:355px; height:71px; float: left; margin: 18px 0 0 10px;}
+        .nav1 > ul {font-size: 20px; }
+        .nav1 > ul > li > a {float:left; margin:17px 0 0 17px; color:#333; font-weight: 700;}
+        .nav1 > ul > li > a:hover {color:orangered; }
+
+        .nav2 {width:1260px; height:47px; margin: 0 auto ;}
+        .nav2 > ul {font-size: 18px; }
+        .nav2 > ul > li > a {float:left; margin: 8px 40px 8px 0px; color:#333; font-weight: 700;}
+        .nav2 > ul > li > a:hover {color:orangered; }
+
+    /*슬라이더*/
+        #slider {width:100%; height: 640px; background-color: chocolate;}
+        #slider img {width:90%; height: 100%; margin: 0 auto;}
+
+    /*섹션-베스트 프로덕트*/    
+
+        .best {width:1260px; height:365px; margin:0 auto;}
+        .best > .best-products1 {width:240px; height: 330px; display:inline-block; }
+        .best-products1 > ul {float: left;}
+        .best-products1 > ul > li {font-size: 25px; margin: 5px 0 20px 0px; font-weight: 600;}
+        
+        .best-products1 > ul > li > a {font-size: 18px; color: dimgray; margin: 20px 0 0 5px;}     
+        .best-products1 > ul > li >a:hover {color:black; }
+
+        .best > .best-products {width:280px; height: 330px; display:inline-block; border:1px solid gray; box-shadow: 2px 2px 2px ghostwhite;}
+        .best-products > img {width: 85%; height: 260px; float: left;  margin: 0 20px; }
+        .best-products > p {font-size: 12px; float: left; width:180px; text-align: center; margin: 10px 55px; }
+
+        .best div:first-of-type {margin: 13px 0 0 35px; }
+        .best div:nth-of-type(2) {margin: 13px 0 0 33px; }
+        .best div:nth-of-type(3) {margin: 13px 0 0 33px; }
+        .best div:last-of-type {margin: 13px 0 0 33px; }
+
+    /*섹션-프로덕트1*/
+
+        .product1 {width:1260px; height:405px; background-color:crimson; margin:0 auto;}
+        .product1 .a {width:280px; height: 310px; background-color: blue; display:inline-block;}
+
+        .product1 h5 {font-size: 28px; margin: 20px; }
+        .product1 div:first-of-type {margin: 0px 0 0 35px; }
+        .product1 div:nth-of-type(2) {margin: 0px 0 0 18px; }
+        .product1 div:nth-of-type(3) {margin: 0px 0 0 18px; }
+        .product1 div:last-of-type {margin: 0px 0 0 18px; }
+
+
+        /*섹션-프로덕트2*/
+
+        .product2 {width:1260px; height:405px; background-color:darkgray; margin:0 auto;}
+        .product2 .b {width:280px; height: 310px; background-color: blue; display:inline-block;}
+
+        .product2 h5 {font-size: 28px; margin: 20px;}
+        .product2 div:first-of-type {margin: 0px 0 0 35px; }
+        .product2 div:nth-of-type(2) {margin: 0px 0 0 18px; }
+        .product2 div:nth-of-type(3) {margin: 0px 0 0 18px; }
+        .product2 div:last-of-type {margin: 0px 0 0 18px; }
+
+        /*섹션 프로덕트3*/
+
+        .product3 {width:1260px; height:405px; background-color:darkcyan; margin:0 auto;}
+        .product3 .c {width:280px; height: 310px; background-color: blue; display:inline-block;}
+
+        .product3 h5 {font-size: 28px; margin: 20px; }
+        .product3 div:first-of-type {margin: 0px 0 0 35px; }
+        .product3 div:nth-of-type(2) {margin: 0px 0 0 18px; }
+        .product3 div:nth-of-type(3) {margin: 0px 0 0 18px; }
+        .product3 div:last-of-type {margin: 0px 0 0 18px; }
+
+
+
+        /*섹션 비디오*/
+
+        .video {width:1260px; height:440px; background-color:burlywood; margin:0 auto;}
+        
+
+
+    /*하단*/
+
+        footer {width: 100%; height: 450px; background-color: aquamarine;}
+        footer .box {width:1020px; height: 330px;  background-color: beige; margin: 0 auto;}
+
+
+ 
+    </style>
+
+</head>
+
+
+
+<body>
+
+<!----헤더-----> 
+    
+    <header>
+        <div id="logo"></div>
+
+        <div class="nav1">
+            <ul>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">타임특가</a></li>
+                <li><a href="#">핫딜</a></li>
+                <li><a href="#">리퍼세일</a></li>
+            </ul>
+
+        </div>
+
+        <div id="login">
+            <div class="icon">
+                <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/business-finance-healthcare-and-science/64/buy-cart-e-commerce-empty-shopping-128.png"alt="장바구니"></a>
+
+            </div>
+            <div class="icon">
+                <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/cosmetology-set/52/cosmetology-02-128.png" alt="로그인"></a>
+            </div>
+            <div class="icon">
+                <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/ikooni-generic-symbols/128/maybe-50-128.png" alt="돋보기"></a>
+            </div>
+        </div>
+        
+    </header>
+     <hr>
+     <div class="nav2">
+        <ul>
+            <li><a href="#">침실</a></li>
+            <li><a href="#">매트리스</a></li>
+            <li><a href="#">거실</a></li>
+            <li><a href="#">주방</a></li>
+            <li><a href="#">서재</a></li>
+            <li><a href="#">수납</a></li>
+            <li><a href="#">의자</a></li>
+            <li><a href="#">홈데코</a></li>
+            <li><a href="#">생활용품</a></li>
+        </ul>
+
+
+     </div>
+     <hr>
+
+     <!--슬라이더-->
+
+     <div id="slider">
+        <img src="img/슬라이더.JPG" alt="슬라이더">
+
+     </div>
+
+
+
+     <!--섹션 베스트상품소개-->
+
+    <section class="best">
+
+        <div class="best-products1">
+            <ul>
+                <li>인기검색어 베스트</li>
+                <li><a href="#">침구세트</a></li>
+                <li><a href="#">서랍장</a></li>
+                <li><a href="#">콘솔</a></li>
+                <li><a href="#">테이블</a></li>
+                <li><a href="#">의자</a></li>
+
+            </ul>
+            
+        </div>
+
+        <div class="best-products">
+            <img src="img/베스트2.jpg" alt="침구1">
+            <p>잠솔솔 토퍼+이불 침구세트<br>
+                [당일배송][리뷰이벤트]
+            </p>
+
+        </div>
+
+        <div class="best-products">
+            <img src="img/베스트1.jpg" alt="침구2">
+            <p>셀레나 홑겹이불 침구세트<br>
+                [베게커버2장+이불]
+            </p>
+
+
+        </div>
+
+        <div class="best-products">
+            <img src="img/베스트3.jpg" alt="침구3">
+            <p>80수바이오워싱 프릴 침구세트<br>
+                [당일배송]
+            </p>
+
+        </div>
+            
+ 
+
+    </section>
+
+    <br>
+    <hr>
+
+
+    <!--섹션 프로덕트1-->
+
+    <section class="product1">
+
+        <h5>product1</h5>
+
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+
+
+
+    </section>
+
+    <!--섹션 프로덕트2-->
+
+    <section class="product2">
+
+        <h5>product2</h5>
+
+        <div class="b"></div>
+        <div class="b"></div>
+        <div class="b"></div>
+        <div class="b"></div>
+
+
+    </section>
+
+    <!--섹션 프로덕트3-->
+
+    <section class="product3">
+
+        <h5>product3</h5>
+
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+
+    </section>
+
+
+    <!---섹션 비디오와 텍스트 소개 구간-->
+
+    <section class="video">
+        
+        <div class="text"></div>
+        <div class="imagebox"></div>
+
+
+    </section>
+
+    
+    <!--하단-->
+
+    <footer>
+        <div class="box">123</div>
+
+    </footer>
+
+
+</body>
+
+</html>
